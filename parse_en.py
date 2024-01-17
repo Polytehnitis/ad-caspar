@@ -35,8 +35,8 @@ class Parse(object):
         # nlp engine instantiation
         print("\nNLP engine initializing. Please wait...")
 
-        # python -m spacy download en_core_web_lg
-        self.nlp = spacy.load('en_core_web_lg')
+        # python -m spacy download en_core_web_trf/en_core_web_lg
+        self.nlp = spacy.load('en_core_web_trf')
 
         if platform.system() == "Windows":
             os.system('cls')
